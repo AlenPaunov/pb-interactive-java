@@ -234,7 +234,7 @@ public class Program {
 
 Write a program, which:
   * **Reads** 2 real numbers from the **console**
-  * Performs **4 arithmetic operations** on the obtained 2 numbers, in the following order: **+, -, *, /**
+  * Performs **4 arithmetic operations** on the obtained 2 numbers, in the following order: +, -, \*, \/
   * **Formats** and **prints** the results like this example:
 
 [/task-description]
@@ -275,7 +275,7 @@ public class Program {
 
 Write a program, which:
   * **Reads** 2 real numbers from the **console**
-  * Performs **4 arithmetic operations** on the obtained 2 numbers, in the following order: **+, -, *, /**
+  * Performs **4 arithmetic operations** on the obtained 2 numbers, in the following order: +, -, \*, \/
   * **Formats** and **prints** the results like this example:
 
 [/task-description]
@@ -452,7 +452,7 @@ public class Program {
 
 Write a program, which:
   * Reads 4 lines of **strings**: first name, last name, country and town 
-  * Prints information about a person in the following format: "**{firstName} {lastName} from {country} - {town}!**"
+  * Prints information about a person in the following format: "\{firstName\} \{lastName\} from \{country\} - \{town\}!"
 
 [/task-description]
 [code-io /]
@@ -491,7 +491,7 @@ public class Program {
 
 Write a program, which:
   * Reads 4 lines of **strings**: first name, last name, country and town 
-  * Prints information about a person in the following format: "**{firstName} {lastName} from {country} - {town}!**"
+  * Prints information about a person in the following format: "\{firstName\} \{lastName\} from \{country\} - \{town\}!"
 
 [/task-description]
 [code-io /]
@@ -525,7 +525,7 @@ public class Program {
 
 Write a program, which:
   * Reads **3 lines** of input: **name** (string), **population** and **area** (integers)
-  * Prints information about a town in the following format: "**Town {name} has population of {population} and area {area} square km.**"
+  * Prints information about a town in the following format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
 [/task-description]
 [code-io /]
@@ -562,7 +562,7 @@ public class Program {
 
 Write a program, which:
   * Reads **3 lines** of input: **name** (string), **population** and **area** (integers)
-  * Prints information about a town in the following format: "**Town {name} has population of {population} and area {area} square km.**"
+  * Prints information about a town in the following format: "Town \{name\} has population of \{population\} and area \{area\} square km."
 
 [/task-description]
 [code-io /]
