@@ -20,7 +20,7 @@ Logical operators are used to perform logical operation such as **AND**, **OR**
 
 The logical operators are:
 * AND (**&&**)
-* OR (**\|\|**)
+* OR (**\| \|**)
 * Logical negation (**!**)
 
 # Switch-case
