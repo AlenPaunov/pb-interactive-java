@@ -15,9 +15,6 @@ for (initialization; condition; step {
 
 **Step** - updates the initialized value
 
-[/slide]
-
-[slide]
 # For-Loop: Example
 
 ```java
