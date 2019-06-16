@@ -11,8 +11,10 @@ for ( ; ; )  {
 
 [slide]
 # Usage in Programming
-Widely used in game development 
+Widely used in game development
+
 Used for drawing animations
+
 Web servers
 
 [/slide]
