@@ -113,7 +113,7 @@ public class Program {
 [task-description]
 
 Write a program, which:
-* Reads **days** in the current month and **salary** per day
+* Reads working **days** in the current month and **salary** per day
 * **Calculates** the salary for the month
 * Prints the result on the console
 
@@ -124,13 +124,10 @@ Write a program, which:
 ## Sample Input and Output
 |Input|Output|
 |-----|------|
-|30|300|
+|3|60|
 |10||
-
-|Input|Output|
-|-----|------|
-|28|560|
 |20||
+|30||
 
 [/slide]
 
@@ -145,9 +142,9 @@ public class Program {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int days = Integer.parseInt(scanner.nextLine());
-        int salaryPerDay = Integer.parseInt(scanner.nextLine());
         int totalSalary = 0;
         for (int i = 1; i <= days; i += 1) {
+            int salaryPerDay = Integer.parseInt(scanner.nextLine());
             totalSalary += salaryPerDay;
         }
         System.out.println(totalSalary);
@@ -158,7 +155,7 @@ public class Program {
 [task-description]
 
 Write a program, which:
-* Reads **days** in the current month and **salary** per day
+* Reads working **days** in the current month and **salary** per day
 * **Calculates** the salary for the month
 * Prints the result on the console
 
@@ -170,12 +167,9 @@ Write a program, which:
 ## Sample Input and Output
 |Input|Output|
 |-----|------|
-|30|300|
+|3|60|
 |10||
-
-|Input|Output|
-|-----|------|
-|28|560|
 |20||
+|30||
 
 [/slide]
