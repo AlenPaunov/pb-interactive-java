@@ -1,232 +1,156 @@
 [slide]
-# Complex Loops
-Loops with different steps
+# While Loop
+Used to repeat a code blockuntil an exit condition is met
+
 ```java
-for (int i = n; i >= 1; i--) …
+while (condition) {
+   // commands
+} 
 ```
-```java
-for (int j = 1; j <= n; j += 2) …
-```
-```java
-for (int k = 1; k <= n; k *= 2) …
-```
-```java
-for (int d = n; d > 0; d /= 2) …
-```
-[/slide]
-[slide]
-# Problem: Numbers from N down to 1
-[code-task title="Numbers from N down to 1" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-
-Write a program to print the numbers from N down to 1
-
-* Read an integer number n
-
-* Print the numbers from n down to 1
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|10|10, 9, 8, 7, 6, 5, 4, 3, 2, 1|
-[/slide]
-
-[slide]
-# Solution: Numbers from N down to 1
-[code-task title="Numbers from N down to 1" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      int n = scanner.nextInt();
-      for (int i = n; i >= 1; i--)  {
-        if (i < n)
-          System.out.print(", ");
-       System.out.print(i);
-      }
-      System.out.println();
-    }
-}
-```
-[/code-editor]
-[task-description]
-
-Write a program to print the numbers from N down to 1
-
-* Read an integer number n
-
-* Print the numbers from n down to 1
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|10|10, 9, 8, 7, 6, 5, 4, 3, 2, 1|
-[/slide]
-
-[slide]
-# Problem: Numbers from 1 to N with Step 3
-[code-task title="Numbers from 1 to N with Step 3" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-
-Write a program to print the numbers from 1 to n with step 3:
-
-* Read an integer number n
-
-* Print the numbers from 1 to n with step 3
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|10|1, 4, 7, 10|
-|7|1, 4, 7|
-[/slide]
-
-[slide]
-# Solution: Numbers from 1 to N with Step 3
-[code-task title="Numbers from 1 to N with Step 3" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      int n = scanner.nextInt();
-      for (int i = 1; i <= n; i += 3) {
-        if (i > 1)
-          System.out.print(", ");
-        System.out.print(i);
-      }
-      System.out.println();
-    }
-}
-```
-[/code-editor]
-[task-description]
-
-Write a program to print the numbers from 1 to n with step 3:
-
-* Read an integer number n
-
-* Print the numbers from 1 to n with step 3
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|10|1, 4, 7, 10|
-|7|1, 4, 7|
-[/slide]
-
-[slide]
-# Problem: Even Powers of 2
-[code-task title="Even Powers of 2" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      // Write code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-Write a program to print the even powers of 2:
-
-* Read a number n
-
-* Print the even powers of 2 up to 2n
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|3|1, 4, 16|
-[/slide]
-
-[slide]
-# Solution: Even Powers of 2
-[code-task title="Even Powers of 2" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```java
-import java.util.Scanner;
-
-public class Program {
-   public static void main(String[] args) {
-      int n = scanner.nextInt();
-      int num = 1;
-      for (int i = 0; i <= n; i += 2) {
-        if (i > 0)
-          System.out.print(", ");
-        System.out.print(num);
-        num = num * 2 * 2;
-      }
-      System.out.println();
-   }
-}
-```
-[/code-editor]
-[task-description]
-Write a program to print the even powers of 2:
-
-* Read a number n
-
-* Print the even powers of 2 up to 2n
-[/task-description]
-[code-io /]
-[/code-task]
-## Sample Input and Output
-|Input|Output|
-|-----|------|
-|3|1, 4, 16|
-[/slide]
-[slide]
-# Do...While Loops
-The do … while (…) loop repeats a block of code until an exit condition is met
-
-* The loop body is always executed at least once
-
-while (…) loop uses exit condition at the start
-
-do … while (…) loop uses exit condition at the end
+# Example
+Print the numbers from 1 to 5
 ```java
 int i = 1;
-do {
-  System.out.println(i);
-  i++;
-} while (i <= 10);
+while (i <= 5) {
+   System.out.println(i);
+   i++;
+}
 ```
+[/slide]
+[slide]
+# Problem: Decreasing Numbers
+[code-task title="Decreasing Numbers" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+Print the numbers from N down to 1, using a while loop
+
+* Write a program which receives number: n
+
+* Print the numbers n … 1
+[/task-description]
+[code-io /]
+[/code-task]
+## Sample Input and Output
+|Input|Output|
+|-----|------|
+|4|4|
+||3|
+||2|
+||1|
+[/slide]
+
+[slide]
+# Solution: Decreasing Numbers
+[code-task title="Decreasing Numbers" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      int number = scanner.nextInt();
+      while (number >= 1) {
+         System.out.println(number);
+         number--;
+      }
+    }
+}
+```
+[/code-editor]
+[task-description]
+Print the numbers from N down to 1, using a while loop
+
+* Write a program which receives number: n
+
+* Print the numbers n … 1
+[/task-description]
+[code-io /]
+[/code-task]
+## Sample Input and Output
+|Input|Output|
+|-----|------|
+|4|4|
+||3|
+||2|
+||1|
+[/slide]
+
+[slide]
+# Problem: Number in Range
+[code-task title="Number in Range" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      // Write code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+Write a program to read a number in the range \[1 … 100\]:
+
+* Read a number from the console
+* Check if the number is in the range \[1 … 100\]
+
+   * No -> read a new number
+   * Yes -> print the number and the program stops
+[/task-description]
+[code-io /]
+[/code-task]
+## Sample Input and Output
+|Input|Output|
+|-----|------|
+|-10|50|
+|101||
+|50||
+[/slide]
+
+[slide]
+# Solution: Number in Range
+[code-task title="Number in Range" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```java
+import java.util.Scanner;
+
+public class Program {
+   public static void main(String[] args) {
+      int num = scanner.nextInt();
+      while (num < 1 || num > 100) {
+         num = scanner.nextInt();
+      }
+      System.out.println(num);
+    }
+}
+```
+[/code-editor]
+[task-description]
+Write a program to read a number in the range \[1 … 100\]:
+
+* Read a number from the console
+* Check if the number is in the range \[1 … 100\]
+
+   * No -> read a new number
+   * Yes -> print the number and the program stops
+[/task-description]
+[code-io /]
+[/code-task]
+## Sample Input and Output
+|Input|Output|
+|-----|------|
+|-10|50|
+|101||
+|50||
 [/slide]
