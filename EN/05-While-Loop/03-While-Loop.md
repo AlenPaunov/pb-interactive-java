@@ -1,6 +1,6 @@
 [slide]
 # While Loop
-Used to repeat a code blockuntil an exit condition is met
+Used to repeat a code block until an exit condition is met
 
 ```java
 while (condition) {
