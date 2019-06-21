@@ -1,50 +1,24 @@
 [slide]
-# While Loop
-Control flow statement
-
-* Executes code repeatedly while a condition is true
-
+# Prefix and Postfix
+Prefix decrement
 ```java
-while (condition) {
-   // Body of the loop
-}
+int a = 1; 
+System.out.println(--a); // 0
+System.out.println(a);   // 0
 ```
-# Example: While Loop
-Print the numbers from 1 to 5
+Postfix decrement
 ```java
-int i = 1;
-while (i <= 5) {
-   System.out.println(i);
-   i++;
-}
+int a = 1;
+System.out.println(a--);
+System.out.println(a);
 ```
-[/slide]
-[slide]
-# While or For?
-***while*** and ***for*** loops **repeat** blocks of **code**
+# Simple For-Loop
+For loops repeat a certain code block a known number of times
 
-Use ***for*** when you know in advance the **number of repetitions**
-
-* For example, repeat exactly 10 times
-
-Use ***while*** when you don't know when the **exit condition** will be met
-
-* For example, repeat until 0 is reached
-[/slide]
-[sldie]
-# The "break" Operator
-Used for prematurely exiting the loop
-
-Can only be executed from the body, during an iteration of the loop
-
-break immediately exits from the loop
-
-* The rest of the loop body is skipped
+Printing the numbers from 1 to 10
 ```java
-int i = 1;
-while (true) {
-  if (i > 10) break;
-  i++;
+for (int i = 1; i <= 10; i++) {
+  System.out.println(i);
 }
 ```
 [/slide]
