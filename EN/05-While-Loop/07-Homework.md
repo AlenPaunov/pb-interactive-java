@@ -269,21 +269,25 @@ import java.util.Scanner;
 public class Program {
    public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-      int num = scanner.nextInt();
+      
+      int num = Integer.parseInt(scanner.nextLine());
       int numDigits = num;
       boolean isSpecial = true;
+
       while (numDigits > 0) {
         int digit = numDigits % 10;
         numDigits /= 10;
+        
         if (digit != 0 && num % digit != 0) {
           isSpecial = false;
           break;
         }
       }
+
       if (isSpecial) {
-        System.out.println(num + " is special")
+        System.out.println(num + " is special");
       } else {
-        System.out.println(num + " is not special")
+        System.out.println(num + " is not special");
       }
     }
 }
