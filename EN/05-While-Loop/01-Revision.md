@@ -1,4 +1,6 @@
 [slide]
+# Revision
+
 # Prefix and Postfix
 Prefix decrement
 ```java
@@ -6,12 +8,14 @@ int a = 1;
 System.out.println(--a); // 0
 System.out.println(a);   // 0
 ```
+
 Postfix decrement
 ```java
 int a = 1;
 System.out.println(a--);
 System.out.println(a);
 ```
+
 # Simple For-Loop
 For loops repeat a certain code block a known number of times
 
