@@ -188,13 +188,21 @@ public class Program {
       Scanner scanner = new Scanner(System.in);
       int min = Integer.MAX_VALUE;
       int max = Integer.MIN_VALUE;
+
       String line = scanner.nextLine();
       while (!line.equals("END")) {
         int num = Integer.parseInt(line);
-        if (num < min) min = num;
-        if (num > max) max = num;
+        if (num < min) {
+          min = num;
+        }
+
+        if (num > max) {
+          max = num;
+        }
+
         line = scanner.nextLine();
       } 
+      
       System.out.println("Min number: " + min);
       System.out.println("Max number: " + max);
     }
