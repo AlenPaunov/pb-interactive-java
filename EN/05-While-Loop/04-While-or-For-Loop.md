@@ -54,9 +54,11 @@ import java.util.Scanner;
 public class Program {
    public static void main(String[] args) {
       int num = scanner.nextInt();
+
       while (num % 2 == 0) {
         num = scanner.nextInt();
       }
+
       System.out.println(num);
     }
 }
@@ -126,13 +128,20 @@ public class Program {
    public static void main(String[] args) {
       int number = Integer.parseInt(scanner.nextLine());
       String command = scanner.nextLine();
+
       while (!command.equals("End")) {
         switch (command) {
-          case "Inc": number++; break;
-          case "Dec": number--; break;
+          case "Inc": 
+            number++; 
+            break;
+          case "Dec": 
+            number--; 
+            break;
         }
+
         command = scanner.nextLine();
       }
+      
       System.out.println(number);
     }
 }

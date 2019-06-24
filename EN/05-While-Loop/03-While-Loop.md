@@ -1,14 +1,16 @@
 [slide]
 # While Loop
-Used to repeat a code block until an exit condition is met
+The **`while`** statement executes a statement or a block of statements while a specified **`Boolean expression`** evaluates to **`true`**
+
+The expression is evaluated before each execution of the loop
 
 ```java
 while (condition) {
    // commands
 } 
 ```
-# Example
-Print the numbers from 1 to 5
+
+# Example: Numbers from 1 to 5
 ```java
 int i = 1;
 while (i <= 5) {
@@ -17,6 +19,7 @@ while (i <= 5) {
 }
 ```
 [/slide]
+
 [slide]
 # Problem: Decreasing Numbers
 [code-task title="Decreasing Numbers" executionStrategy="java-code" requiresInput]
