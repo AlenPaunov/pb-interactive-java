@@ -140,7 +140,7 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 if (i % 2 == 0 && j % 2 != 0) {
-                    System.out.printf("{%d}{%d}{%d} ", i, j, i * j);
+                    System.out.printf("%d%d%d ", i, j, i * j);
                 }
             }
         }
