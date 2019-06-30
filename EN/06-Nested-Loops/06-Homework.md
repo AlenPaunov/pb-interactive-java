@@ -213,7 +213,7 @@ public class Main {
             for (int j = 1; j <= 9; j++) {
                 for (int k = 1; k <= 9; k++) {
                     if (i * j * k == magicNumber) {
-                        System.out.printf("{%d}{%d}{%d}%n", i, j, k);
+                        System.out.printf("%d%d%d%n", i, j, k);
                     }
                 }
             }
@@ -294,7 +294,7 @@ public class Main {
                 currentMoney += money;
             }
 
-            System.out.printf("Going to {%s}!%n", townName);
+            System.out.printf("Going to %s!%n", townName);
             currentMoney = 0;
         }
     }
@@ -377,7 +377,7 @@ public class Main {
             }
 
             if (prime) {
-                System.out.printf("{%d} ", num);
+                System.out.printf("%d ", num);
             }
         }
     }
@@ -455,7 +455,7 @@ public class Main {
                 for (int k = 1; k <= n3; k++) {
                     if (i % 2 == 0 && k % 2 == 0) {
                         if (j == 2 || j == 3 || j == 5 || j == 7) {
-                            System.out.printf("{%d}{%d}{%d}%n", i, j, k);
+                            System.out.printf("%d%d%d%n", i, j, k);
                         }
                     }
                 }
@@ -544,6 +544,8 @@ public class Main {
                 }
             }
         }
+
+        System.out.println(counter);
     }
 }
 ```
