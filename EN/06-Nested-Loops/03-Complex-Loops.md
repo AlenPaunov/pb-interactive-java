@@ -161,7 +161,7 @@ public class Main {
 Write a program, which:
 
 * Reads a number **n**
-* Prints the even powers of 2 to 2**n**: 20, 22, 24, 28, …, 2n
+* Prints the even powers of 2 to 2^**n**: 2^0, 2^2, 2^4, 2^8, …, 2^n
 [/task-description]
 [code-io /]
 [/code-task]
